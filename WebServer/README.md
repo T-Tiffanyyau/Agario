@@ -17,17 +17,17 @@ It also builds the webpage on localhost:11001, where users can see the player da
 
 # Database Table Summary:
 
-    1. AgarioGame: Store the game id and number of players in the game. The game id is the primary key.
+ 1. AgarioGame: Store the game id and number of players in the game. The game id is the primary key.
 
-    2. AgarioPlayer: Store the player id, game id, and player name, creating primary data for the player object. The game id is the foreign key referencing from AgarioGame.
+ 2. AgarioPlayer: Store the player id, game id, and player name, creating primary data for the player object. The game id is the foreign key referencing from AgarioGame.
 
-    3. AgarioPlayerDetailedData: Stores more information about the player, such as the mass, game lasted, start time, and dead time.
-    It references the AgarioPlayer table but stores more customized information about the player.
+3. AgarioPlayerDetailedData: Stores more information about the player, such as the mass, game lasted, start time, and dead time.
+It references the AgarioPlayer table but stores more customized information about the player.
 
-    4. PlayerNumberOneData: The table is based on the AgarioPlayer. It stores data specifically about "At what time into the game was the player number one in size" and the mass at that time.
+4. PlayerNumberOneData: The table is based on the AgarioPlayer. It stores data specifically about "At what time into the game was the player number one in size" and the mass at that time.
 
-    5. AlivePlayersRank: The table is based on the AgarioPlayer. It stores player data and indicates whether the player is alive.
-    So we could create a rank base on live players.
+5. AlivePlayersRank: The table is based on the AgarioPlayer. It stores player data and indicates whether the player is alive.
+So we could create a rank base on live players.
 
 
 # References:
