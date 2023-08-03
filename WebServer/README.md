@@ -9,18 +9,11 @@ Project:    WebServer
 Copyright:  CS 3500, Tiffany Yau and Man Wai Lam - This work may not be copied for use in Academic Coursework.
 ```
 
-# Comments to WebServer:
-No comments.
+# WebServer:
 
-# Assignment Specific Topics:
+The WebServer class stores the player data to SQL and allows users to access it through localhost:11001.
 
-The WebServer class store the player data to sql and also allow user to access it through localhost:11001.
-
-It also build the webpage on localhost:11001 where user can see the player data.
-
-# Consulted Peers:
-
-None
+It also builds the webpage on localhost:11001, where users can see the player data.
 
 # References:
 
