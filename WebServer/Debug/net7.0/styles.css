@@ -1,0 +1,52 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: yellow; /* Updated background color to yellow */
+    margin: 0;
+    padding: 0;
+}
+
+.centered-content {
+    text-align: center;
+    background-color: yellow;
+    padding: 20px;
+}
+
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 16px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px; /* Increased padding for a larger button */
+    border-radius: 4px;
+    margin: 8px;
+    font-size: 1.1em; /* Increased font size for better readability */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Added a subtle box shadow */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Added a transition for smooth hover effects */
+}
+
+.btn:hover {
+    background-color: #666; /* Change the background color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Increase the box shadow size on hover */
+}
+
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
