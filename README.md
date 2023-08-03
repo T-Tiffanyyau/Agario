@@ -15,7 +15,7 @@ The Agario project is a comprehensive game development undertaking involving var
 
 It is also an exploration of game development, tackling real-time networking, database operations, GUI rendering, game physics, mechanics, and server management.
 
-It was written by C# and leverages a networking library for managing client-server communication and SQL for database operations.
+It was written in C# and leverages a networking library for managing client-server communication and SQL for database operations.
 
 ## Classes in the project
 
