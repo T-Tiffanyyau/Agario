@@ -26,7 +26,7 @@ It also builds the webpage on localhost:11001, where users can see the player da
 
     4. PlayerNumberOneData: The table is based on the AgarioPlayer. It stores data specifically about "At what time into the game was the player number one in size" and the mass at that time.
 
-    5. AlivePlayersRank: The table is based on the AgarioPlayer. It stores player data and also indicates whether the player is alive or not.
+    5. AlivePlayersRank: The table is based on the AgarioPlayer. It stores player data and indicates whether the player is alive.
     So we could create a rank base on live players.
 
 
