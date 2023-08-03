@@ -9,18 +9,25 @@ Solution:   Agario
 Copyright:  CS 3500, Tiffany Yau and Man Wai Lam - This work may not be copied for use in Academic Coursework.
 ```
 
-# Overview of the Agario
+# Agario
 
-## Notes to the Grader
-We are sorry to have the Agario client GUI in this repo. 
+The Agario project is a comprehensive game development undertaking that involves various aspects of both client-side and server-side operations.
 
-After we almost finished the project, we realized that we should not hand in the instrumented client.
+For me, it is also a holistic exploration of game development, tackling real-time networking, database operations, GUI rendering, game physics, mechanics, and server management.
 
-We tried to seprate the program afterwards but we didnt succeed.
+It was written by C# and leverages a networking library for managing client-server communication and SQL for database operations.
 
-Although our submittion for the asignment at https://github.com/uofu-cs3500-spring23/assignment-nine---web-server---sql-dadada
+## Classes in the project
 
-has both gui & webserver, it is ready for grade.
+Agario Models: This is where the core game logic resides. It models the game world of Agario, including the objects within the game such as the Players and Food, and how they interact with each other.
+
+ClientGUI: This component handles the visual presentation of the game world on the client's end. It utilizes an update loop that runs on a separate thread to ensure a smooth gameplay experience. I've also provided some customization options, like adjusting the zoom level and changing the font size and color for player names.
+
+FileLogger: This is my logging utility. It's in charge of creating a log file where it stores log messages following a specific format. The format includes the timestamp, log level, and the actual log message. This class proves invaluable for debugging, performance monitoring, or even usage analytics.
+
+WebServer: This is the nerve center of all server-side operations. It manages the storing of player data into an SQL database, thereby providing users access to this data through a web server I set up to run on localhost. It also generates webpages for users to interact with, offering data like high scores. This class takes care of HTTP requests and responses, crafting dynamic webpages based on the game's current state.
+
+
 
 # Database Table Summary
 1. Briefly describe your DB architecture, i.e, what tables did you create and how are they related?   
@@ -40,29 +47,3 @@ has both gui & webserver, it is ready for grade.
 2. What (if any) non-standard pieces of data did you decide to put in your DB?
 
     I think the data we put in the database is pretty standard. We just store the player data we have in the program like start time, mass, name, etc.
-
-# Partnership Information
-
-Our code was mostly completed via pair programming such as making the webpage to be able to insert data to sql, making html pages, create sql table by html.
-We also did some individual work such as writing readme.
-
-# Branching
-
-We did not use branching in this project. We did the project together in person and we feel like there is not a need to use branching.
-
-commit numbers: 35
-
-# Testing
-
-We did not test the game with unit testing. But we did test the program and looking up localhost:11001 to check on the database multiple times.
-
-# Time Expenditures:
-```
-Hours Estimated/Worked         Assignment                                           Note
-          20  /  20            Assignment Nine - Web Server and SQL Integration     Everything on time
-```
-
-Editing Client GUI to be able to pass data to webserver: 6 hours
-inserting data to sql & creating html pages: 9 hours
-testing and debugging: 4 hours
-writing readme: 1 hours
