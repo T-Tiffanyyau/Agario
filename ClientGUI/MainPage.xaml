@@ -1,0 +1,69 @@
+﻿<!-- /// <summary>
+/// Author:    Man Wai Lam & Tiffany Yau
+/// Date:      15 Apr 2023
+/// Course:    CS 3500, University of Utah, School of Computing
+/// Copyright: CS 3500 and Tiffany Yau - This work may not 
+///            be copied for use in Academic Coursework.
+///
+/// We, Man Wai Lam & Tiffany Yau, certify that I wrote this code from scratch and
+/// did not copy it in part or whole from another source.  All 
+/// references used in the completion of the assignments are cited 
+/// in my README file.
+///
+/// File Contents
+///
+///    This class create the layout of the GUI.
+/// 
+/// </summary> -->
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClientGUI.MainPage">
+    <StackLayout>
+        <StackLayout x:Name="WelcomeScreen">
+            <Label Text="Player Name" />
+            <Entry x:Name="PlayerNameEntry" Placeholder="Enter your name" />
+            <Label Text="Server Address" />
+            <Entry x:Name="ServerAddressEntry" Placeholder="Enter server address" Text="localhost"/>
+            <Button Text="Connect" Clicked="OnConnectButtonClicked" />
+            <Label x:Name="ErrorMessageLabel" TextColor="Red" />
+        </StackLayout>
+
+        <StackLayout x:Name="GameScreen" IsVisible="False">
+            <!-- First row of game info -->
+            <Grid HorizontalOptions="CenterAndExpand" Padding="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Label x:Name="fpsLabel" Text="FPS: " Padding="10" LineBreakMode="NoWrap" Grid.Column="0" WidthRequest="100"/>
+                <Label x:Name="heartBeatLabel" Text="Heart Beat: " Padding="10" LineBreakMode="NoWrap" Grid.Column="1" WidthRequest="150"/>
+                <Label x:Name="frameCounterLabel" Text="Frame Counter: " Padding="10" LineBreakMode="NoWrap" Grid.Column="2" WidthRequest="200"/>
+
+            </Grid>
+
+            <!-- Second row of game info -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand"  Padding="20">
+                <Label x:Name="centeredOnLabel" Text="Centered On: " Padding="10" LineBreakMode="NoWrap"/>
+                <Label x:Name="massLabel" Text="Mass: " Padding="10" LineBreakMode="NoWrap"/>
+                <Button x:Name="SplitButton" Text="Split" Clicked="OnSplitButtonClicked" />
+
+            </StackLayout>
+
+            <!-- game screen -->
+            <GraphicsView 
+                x:Name="PlaySurface"
+                VerticalOptions="Center"
+                BackgroundColor="Blue"
+                HeightRequest="800"
+                WidthRequest="800">
+                <GraphicsView.GestureRecognizers>
+                    <PointerGestureRecognizer PointerMoved="OnPointerMoved"/>
+                    <TapGestureRecognizer Tapped="OnTap"/>
+                    <PanGestureRecognizer PanUpdated="PanUpdated"/>
+                </GraphicsView.GestureRecognizers>
+            </GraphicsView>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
