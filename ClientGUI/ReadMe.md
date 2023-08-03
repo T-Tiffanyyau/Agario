@@ -24,6 +24,7 @@ and a GraphicsView object for rendering the game world.
 
 ### World Update
 To update the game world with the latest data from the server, call the UpdateWorld method with a new World object.
+
 Drawing the Game World
 
 ### Customization
