@@ -9,11 +9,7 @@ Project:    AgarioModels
 Copyright:  CS 3500, Tiffany Yau and Man Wai Lam - This work may not be copied for use in Academic Coursework.
 ```
 
-# Comments to AgarioModels:
-
-The class is modified from assignment 8 to be able to send data to sql.
-
-# Assignment Specific Topics:
+# AgarioModels:
 
 Agario Models defines the world of the Agario game.
 
@@ -26,10 +22,6 @@ GameObjects: The base class for all the game objects. It contains the basic info
 Player: The player class. It contains the information of the player.
 
 Food: The food class. It contains the information of the food.
-
-# Consulted Peers:
-
-None
 
 # References:
 
