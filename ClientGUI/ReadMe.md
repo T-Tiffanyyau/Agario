@@ -28,8 +28,8 @@ Drawing the Game World
 
 ### Customization
 You can adjust the following parameters:
-Zoom level: Modify ZoomX and ZoomY constants in the GameWorldDrawable class.
-Player name font size and color: Adjust fontSize and fontColor variables in the DrawPlayerName and DrawCurrentPlayerName methods.
+- Zoom level: Modify ZoomX and ZoomY constants in the GameWorldDrawable class.
+- Player name font size and color: Adjust fontSize and fontColor variables in the DrawPlayerName and DrawCurrentPlayerName methods.
 
 # References:
 
