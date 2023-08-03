@@ -15,7 +15,7 @@ The WebServer class stores the player data to SQL and allows users to access it 
 
 It also builds the webpage on localhost:11001, where users can see the player data.
 
-## Database Table Summary:
+# Database Table Summary:
 
     1. AgarioGame: Store the game id and number of players in the game. The game id is the primary key.
 
