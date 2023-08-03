@@ -12,10 +12,11 @@ Copyright:  CS 3500, Tiffany Yau and Man Wai Lam - This work may not be copied f
 # ClientGUI:
 
 ## Features
--Real-time rendering of the game world with zoom functionality
--Display of player names above their game characters
--Efficient use of color caching for improved performance
--Update loop running on a separate thread for smooth gameplay
+
+- Real-time rendering of the game world with zoom functionality
+- Display of player names above their game characters
+- Efficient use of color caching for improved performance
+- Update loop running on a separate thread for smooth gameplay
 
 ### Usage
 To initialize the GameWorldDrawable class, pass the initial World object, a Networking object for communication with the server, 
