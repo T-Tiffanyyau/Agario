@@ -9,16 +9,9 @@ Project:    FileLogger
 Copyright:  CS 3500, Tiffany Yau and Man Wai Lam - This work may not be copied for use in Academic Coursework.
 ```
 
-# Comments to FileLogger:
-The FileLogger class is a simple logger that writes log messages to a file. It implements the ILogger interface provided by Microsoft.Extensions.Logging.
+# FileLogger:
 
-# Assignment Specific Topics:
-
-The filelogger class create a log file which stores Log messages in the format of "[timestamp] [logLevel] - [message]".
-
-# Consulted Peers:
-
-None
+The filelogger class creates a log file that stores Log messages in the format of "[timestamp] [logLevel] - [message]".
 
 # References:
 
