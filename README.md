@@ -13,7 +13,7 @@ Copyright:  CS 3500, Tiffany Yau and Man Wai Lam - This work may not be copied f
 
 The Agario project is a comprehensive game development undertaking involving various client- and server-side operations aspects.
 
-For me, it is also an exploration of game development, tackling real-time networking, database operations, GUI rendering, game physics, mechanics, and server management.
+It is also an exploration of game development, tackling real-time networking, database operations, GUI rendering, game physics, mechanics, and server management.
 
 It was written by C# and leverages a networking library for managing client-server communication and SQL for database operations.
 
@@ -26,24 +26,3 @@ It was written by C# and leverages a networking library for managing client-serv
 - FileLogger: This is my logging utility. It's in charge of creating a log file that stores log messages following a specific format. The format includes the timestamp, log level, and log message. This class proves invaluable for debugging, performance monitoring, or even usage analytics.
 
 - WebServer: This is the nerve center of all server-side operations. It manages to store player data into an SQL database, providing users access to this data through a web server set up to run on localhost. It also generates webpages for users to interact with, offering data like high scores. This class handles HTTP requests and responses, crafting dynamic webpages based on the game's current state.
-
-
-
-# Database Table Summary
-1. Briefly describe your DB architecture, i.e, what tables did you create and how are they related?   
-
-    1. AgarioGame: Store the game id and number of players in the game. The game id is the primary key.
-
-    2. AgarioPlayer: Store the player id, game id, and player name, creates a primary data for player object. The game id is the foreign key referencing from AgarioGame.
-
-    3. AgarioPlayerDetailedData: Stores more information about the player, such as the mass, game lasted, start time and dead time.
-    It references the AgarioPlayer table but just stores more customized information about the player.
-
-    4. PlayerNumberOneData: The table is base on the AgarioPlayer. It stores data specifically about "At what time into the game was the player number one in size" and the mass at that time.
-
-    5. AlivePlayersRank: The table is base on the AgarioPlayer. It stores player data and also indicate whether the player is alive or not.
-    So we could create a rank base on alive players.
-
-2. What (if any) non-standard pieces of data did you decide to put in your DB?
-
-    I think the data we put in the database is pretty standard. We just store the player data we have in the program like start time, mass, name, etc.
