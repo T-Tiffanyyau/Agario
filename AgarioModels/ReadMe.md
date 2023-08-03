@@ -15,13 +15,13 @@ Agario Models defines the world of the Agario game.
 
 It contains the following classes:
 
-World: The world of the game. It contains all the game data and also functions that is use for the game objects.
+- World: The world of the game. It contains all the game data and also functions that is use for the game objects.
 
-GameObjects: The base class for all the game objects. It contains the basic information of the game objects.
+- GameObjects: The base class for all the game objects. It contains the basic information of the game objects.
 
-Player: The player class. It contains the information of the player.
+- Player: The player class. It contains the information of the player.
 
-Food: The food class. It contains the information of the food.
+- Food: The food class. It contains the information of the food.
 
 # References:
 
